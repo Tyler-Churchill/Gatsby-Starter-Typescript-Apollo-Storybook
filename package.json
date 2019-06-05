@@ -1,30 +1,53 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "name": "gatsby-starter-typescript-storybook",
+  "author": "Tyler Churchill",
+  "description": "A simplified bare-bones starter for Gatsby including typescript, storybook, and emotion.",
+  "version": "1.0.0",
   "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "react",
+    "storybook",
+    "emotion",
+    "styled"
+  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.11",
     "gatsby": "^2.8.3",
+    "gatsby-plugin-emotion": "^4.0.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "gatsby-plugin-typescript": "^2.0.15",
+    "react-docgen-typescript-loader": "^3.1.0",
+    "@types/storybook__addon-info": "^4.1.1",
+    "typescript": "^3.5.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "@storybook/addon-info": "^5.0.11",
+    "@types/storybook__addon-actions": "^3.4.2",
+    "@types/storybook__react": "^4.0.1",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "^8.0.6",
     "prettier": "^1.17.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Tyler-Churchill/gatsby-starter-typescript-storybook"
   }
 }
