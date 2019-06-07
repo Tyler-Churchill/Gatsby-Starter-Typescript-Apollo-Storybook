@@ -5,5 +5,5 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-typescript`, `gatsby-plugin-emotion`],
+  plugins: [`gatsby-plugin-emotion`, `gatsby-plugin-typescript`],
 }

@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-typescript-storybook",
+  "name": "gatsby-starter-typescript-apollo-storybook",
   "author": "Tyler Churchill",
-  "description": "A simplified bare-bones starter for Gatsby including typescript, storybook, and emotion.",
+  "description": "A simplified bare-bones starter for Gatsby including typescript, apollo, storybook, and emotion.",
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
@@ -9,7 +9,9 @@
     "react",
     "storybook",
     "emotion",
-    "styled"
+    "styled",
+    "apollo",
+    "graphql"
   ],
   "scripts": {
     "build": "gatsby build",
@@ -24,13 +26,17 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.11",
+    "apollo-boost": "^0.4.2",
     "gatsby": "^2.8.3",
     "gatsby-plugin-emotion": "^4.0.7",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^16.8.6",
+    "react-apollo": "^2.5.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
+    "@types/isomorphic-fetch": "0.0.35",
     "gatsby-plugin-typescript": "^2.0.15",
     "react-docgen-typescript-loader": "^3.1.0",
     "@types/storybook__addon-info": "^4.1.1",
