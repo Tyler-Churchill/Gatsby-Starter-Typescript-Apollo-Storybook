@@ -50,7 +50,7 @@
     "@storybook/addons": "5.0.11",
     "@storybook/react": "5.0.11",
     "babel-loader": "8.0.6",
-    "prettier": "1.17.1"
+    "prettier": "1.19.1"
   },
   "repository": {
     "type": "git",
