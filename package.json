@@ -30,9 +30,9 @@
     "gatsby": "2.8.3",
     "gatsby-plugin-emotion": "4.0.7",
     "isomorphic-fetch": "2.2.1",
-    "react": "16.8.6",
+    "react": "16.12.0",
     "react-apollo": "2.5.8",
-    "react-dom": "16.8.6"
+    "react-dom": "16.12.0"
   },
   "devDependencies": {
     "@babel/core": "7.7.7",
