@@ -35,7 +35,7 @@
     "react-dom": "16.13.0"
   },
   "devDependencies": {
-    "@babel/core": "7.8.4",
+    "@babel/core": "7.8.6",
     "@types/isomorphic-fetch": "0.0.35",
     "gatsby-plugin-typescript": "2.1.27",
     "react-docgen-typescript-loader": "3.6.0",
