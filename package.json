@@ -24,7 +24,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@emotion/core": "10.0.27",
+    "@emotion/core": "10.0.28",
     "@emotion/styled": "10.0.27",
     "apollo-boost": "0.4.7",
     "gatsby": "2.19.22",
