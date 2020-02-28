@@ -40,7 +40,7 @@
     "gatsby-plugin-typescript": "2.1.27",
     "react-docgen-typescript-loader": "3.6.0",
     "@types/storybook__addon-info": "4.1.2",
-    "typescript": "3.8.2",
+    "typescript": "3.8.3",
     "awesome-typescript-loader": "5.2.1",
     "@storybook/addon-info": "5.3.14",
     "@types/storybook__addon-actions": "3.4.3",
