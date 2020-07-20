@@ -1,11 +1,18 @@
-import ApolloClient from "apollo-boost"
-import fetch from "isomorphic-fetch"
 import React, { ReactNode } from "react"
-import { ApolloProvider } from "react-apollo"
+import fetch from "isomorphic-fetch"
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  HttpLink,
+} from "@apollo/client"
 
 export const client = new ApolloClient({
-  uri: process.env.GATSBY_API_URL,
-  fetch,
+  link: new HttpLink({
+    uri: process.env.GATSBY_API_URL,
+    fetch,
+  }),
+  cache: new InMemoryCache(),
 })
 
 export const wrapRootElement = ({ element }: { element: ReactNode }) => (

@@ -1,10 +1,7 @@
 import * as React from "react"
-import { storiesOf } from "@storybook/react"
-import { AppButton } from "../components/AppButton"
-import { action } from "@storybook/addon-actions"
 
-storiesOf(`AppButton`, module)
-  .add(`with text`, () => <AppButton text={"test"} />)
-  .add(`with onClick`, () => (
-    <AppButton text={"hello"} onClick={action("clicked")} />
-  ))
+import { AppButton } from "../components/AppButton"
+
+export default { title: "Button" }
+
+export const withText = () => <AppButton text={"Hello Button"} />

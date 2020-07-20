@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 const EmotionButton = styled("button")`
   padding: 20px;
-  background: pink;
+  background: blue;
   border-radius: 3px;
   color: #fff;
   p {

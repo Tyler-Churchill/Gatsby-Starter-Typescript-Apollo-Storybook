@@ -1,52 +1,46 @@
-import React, { Component } from "react"
+import React, { useState } from "react"
 import { AppButton } from "../components/AppButton"
-import DogAvatar from "../components/DogAvatar"
 import EmotionButton from "../components/EmotionComponent"
+import CharacterAvatar from "../components/RickAndMortyCharacter"
 
-type IndexPageState = {
-  clickCount: number
-}
+const IndexPage = () => {
+  const [characterId, setCharacterId] = useState(1)
+  const [clickCount, setClickCount] = useState(0)
 
-export default class IndexPage extends Component<any, IndexPageState> {
-  constructor(props: any) {
-    super(props)
-    this.state = {
-      clickCount: 0,
+  const changeCharacter = () => {
+    const res = Math.floor(Math.random() * 8) + 1
+    if (res == characterId) {
+      changeCharacter()
+    } else {
+      setCharacterId(res)
     }
   }
-
-  render() {
-    return (
-      <div>
-        <div>
-          <h2>Here is an index page, please click the button</h2>
-          <AppButton
-            text={"Click me!"}
-            onClick={() => {
-              this.setState({ clickCount: this.state.clickCount + 1 })
-            }}
-          />
-          <span style={{ paddingLeft: "25px" }}>
-            Total Clicks: {this.state.clickCount}
-          </span>
-        </div>
-        <div>
-          <h2>Here is a cute dog!</h2>
-          <DogAvatar />
-        </div>
-        <div>
-          <EmotionButton
-            onClick={() => {
-              this.setState({ clickCount: this.state.clickCount + 1 })
-            }}
-          >
-            I am a button styled with <i>Emotion</i>
-            <p>
-              <i>You may also click me...</i>
-            </p>
-          </EmotionButton>
-        </div>
-      </div>
-    )
+  const incrementClickCount = () => {
+    setClickCount(clickCount + 1)
   }
+  return (
+    <div>
+      <div>
+        <h2>Here is an index page, please click the button</h2>
+        <AppButton text={"Click me!"} onClick={incrementClickCount} />
+        <span style={{ paddingLeft: "25px" }}>Total Clicks: {clickCount}</span>
+      </div>
+      <div>
+        <h2>Rick and Morty Character:</h2>
+        <CharacterAvatar id={characterId} />
+      </div>
+      <div>
+        <EmotionButton onClick={changeCharacter}>
+          Change Character
+        </EmotionButton>
+      </div>
+      <div>
+        <i>
+          Notice the cache being used for characters that have already been
+          fetched previously
+        </i>
+      </div>
+    </div>
+  )
 }
+export default IndexPage
