@@ -39,7 +39,7 @@
     "@storybook/react": "5.3.19",
     "@types/isomorphic-fetch": "0.0.35",
     "babel-loader": "8.1.0",
-    "fork-ts-checker-webpack-plugin": "5.0.11",
+    "fork-ts-checker-webpack-plugin": "5.0.12",
     "gatsby-plugin-typescript": "2.4.16",
     "prettier": "1.19.1",
     "react-docgen-typescript-loader": "3.7.2",
