@@ -27,7 +27,7 @@
     "@apollo/client": "3.1.4",
     "@emotion/core": "10.0.35",
     "@emotion/styled": "10.0.27",
-    "gatsby": "2.24.52",
+    "gatsby": "2.24.53",
     "gatsby-plugin-emotion": "4.3.10",
     "isomorphic-fetch": "2.2.1",
     "react": "16.13.1",
