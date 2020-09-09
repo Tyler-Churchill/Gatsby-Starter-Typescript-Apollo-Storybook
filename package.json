@@ -24,7 +24,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@apollo/client": "3.1.4",
+    "@apollo/client": "3.1.5",
     "@emotion/core": "10.0.35",
     "@emotion/styled": "10.0.27",
     "gatsby": "2.24.56",
