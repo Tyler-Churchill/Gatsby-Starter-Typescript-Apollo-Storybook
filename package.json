@@ -43,7 +43,7 @@
     "gatsby-plugin-typescript": "2.4.21",
     "prettier": "1.19.1",
     "react-docgen-typescript-loader": "3.7.2",
-    "ts-loader": "8.0.4",
+    "ts-loader": "8.0.5",
     "typescript": "3.9.7"
   },
   "repository": {
