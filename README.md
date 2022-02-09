@@ -21,7 +21,9 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     ```sh
     # clone the starter
-    git clone https://github.com/Tyler-Churchill/gatsby-starter-typescript-storybook
+    git clone https://github.com/Tyler-Churchill/Gatsby-Starter-Typescript-Apollo-Storybook.git
+    #switch to project directory
+    cd Gatsby-Starter-Typescript-Apollo-Storybook
     # install deps
     npm install
     ```
