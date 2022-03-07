@@ -44,7 +44,7 @@
     "prettier": "1.19.1",
     "react-docgen-typescript-loader": "3.7.2",
     "ts-loader": "8.0.8",
-    "typescript": "3.9.7"
+    "typescript": "3.9.10"
   },
   "repository": {
     "type": "git",
